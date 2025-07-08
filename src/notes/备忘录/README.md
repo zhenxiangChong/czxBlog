@@ -20,30 +20,20 @@ config:
         details: SSH 命令行、SCP、keygen 生成
         link: ./ssh.md
       -
-        title: Grep
+        title: Issues
         icon: cil:find-in-page
-        details: Grep 命令行、参数、正则表达式
-        link: ./grep.md
+        details: 记录日常遇到的问题
+        link: ./issues.md
       -
         title: Git
         icon: logos:git-icon
         details: Git 命令行、日志、统计、分支
         link: ./git.md
       -
-        title: pm2
-        icon: logos:pm2-icon
-        details: pm2 进程管理、配置
-        link: ./pm2.md
-      -
-        title: nginx
+        title: Nginx
         icon: logos:nginx
         details: nginx 配置，常用功能示例
         link: ./nginx.md
-      -
-        title: cargo
-        icon: logos:rust
-        details: cargo 命令行、参数
-        link: ./cargo.md
   -
     type: custom
 permalink: /memorandum/
