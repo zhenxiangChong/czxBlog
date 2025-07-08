@@ -1,0 +1,37 @@
+{
+  "cSpell.words": [
+    "Brotli",
+    "caniuse",
+    "commitlint",
+    "CSSOM",
+    "deepseek",
+    "docsearch",
+    "esbuild",
+    "flexbox",
+    "frontmatter",
+    "iconify",
+    "instanceof",
+    "msvc",
+    "nightwatch",
+    "Pinia",
+    "proto",
+    "rustc",
+    "rustup",
+    "shiki",
+    "struct",
+    "Tongji",
+    "twoslash",
+    "typeof"
+  ],
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true,
+    ".vscode": true,
+    "**/.temp": true,
+    "docs/**": true,
+    "yarn.lock": true
+  },
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "prettier.enable": true
+}
