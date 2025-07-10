@@ -261,7 +261,7 @@ killall program_name
 ### 服务器响应
 
 ```sh
-curl -i https://pengzhanbo.cn
+curl -i https://chongzhenxiang.cn
 ```
 
 ### 检查域名/地址连接
@@ -269,20 +269,20 @@ curl -i https://pengzhanbo.cn
 检查域名或者地址某端口是否能够连接
 
 ```sh
-nc -vz pengzhanbo.cn 443
+nc -vz chongzhenxiang.cn 443
 nc -vz 1.1.1.1 443
 ```
 
 ### 域名DNS配置
 
 ```sh
-dig pengzhanbo.cn
+dig chongzhenxiang.cn
 ```
 
 ### 域名所有人和注册信息
 
 ```sh
-whois pengzhanbo.cn
+whois chongzhenxiang.cn
 ```
 
 ## 热键

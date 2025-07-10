@@ -8,8 +8,8 @@ export default defineThemeConfig({
   notes,
   profile: {
     name: "种振祥",
-    avatar: "/images/blogger-fav.png",
-    description: "世间的美好总是不期而遇",
+    avatar: "/images/blog-avatar.jpg",
+    description: "勤能补拙",
   },
   social: [
     { icon: "github", link: "https://github.com/zhenxiangchong" },

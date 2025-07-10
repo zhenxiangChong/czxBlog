@@ -74,10 +74,10 @@ Access-Control-Allow-Origin: *
 
 **示例2：**
 
-允许来自 <https://pengzhanbo.cn> 的请求
+允许来自 <https://chongzhenxiang.cn> 的请求
 
 ```
-Access-Control-Allow-Origin: https://pengzhanbo.cn
+Access-Control-Allow-Origin: https://chongzhenxiang.cn
 Vary: Origin
 ```
 
@@ -227,7 +227,7 @@ Access-Control-Allow-Credentials: true
 
 ```js
 const xhr = new XMLHttpRequest()
-xhr.open('GET', 'https://pengzhanbo.cn', true)
+xhr.open('GET', 'https://chongzhenxiang.cn', true)
 xhr.withCredentials = true
 xhr.send(null)
 ```
@@ -235,7 +235,7 @@ xhr.send(null)
 使用带 credentials 的 Fetch:
 
 ```js
-fetch('https://pengzhanbo.cn', {
+fetch('https://chongzhenxiang.cn', {
   credentials: 'include',
 })
 ```
@@ -320,7 +320,7 @@ CORS 预检请求不能包含凭据。预检请求的响应必须指定 Access-C
 
 在响应附带身份凭证的请求时：
 
-- 服务器不能将 **Access-Control-Allow-Origin** 的值设为通配符 `*`，而应将其设置为特定的域，如：Access-Control-Allow-Origin: <https://pengzhanbo.cn。>
+- 服务器不能将 **Access-Control-Allow-Origin** 的值设为通配符 `*`，而应将其设置为特定的域，如：Access-Control-Allow-Origin: <https://chongzhenxiang.cn。>
 
 - 服务器不能将 **Access-Control-Allow-Headers** 的值设为通配符 `*`，而应将其设置为首部名称的列表，如：Access-Control-Allow-Headers: X-Custom-Header, Content-Type
 

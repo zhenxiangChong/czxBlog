@@ -7,7 +7,7 @@ config:
   - type: Landing
     name: 种振祥
     tagline: 即使慢，驰而不息，纵会落后，纵会失败，但必须能够到达他所向的目标。
-    avatar: /images/blogger-fav.png
+    avatar: /images/blog-avatar.jpg
     background: https://api.pengzhanbo.cn/wallpaper/bing
     nav:
       - text: 博客
@@ -22,9 +22,9 @@ config:
         link: /sites-collect/
         icon: mdi:roadmap
 
-      - text: 开源
-        link: /projects/
-        icon: material-symbols:code
+      - text: 文章推荐
+        link: /recommend/
+        icon: material-symbols:text-snippet-outline
 
       - text: AI
         link: /ai/

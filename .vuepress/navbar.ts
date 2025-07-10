@@ -57,6 +57,12 @@ export default defineNavbarConfig([
     ],
   },
   {
+    text: "关于",
+    link: "/about/",
+    activeMatch: "^/about/",
+    icon: "streamline-freehand:programming-code-idea",
+  },
+  {
     text: "更多",
     icon: "mingcute:more-3-fill",
     items: [
