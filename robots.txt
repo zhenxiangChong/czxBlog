@@ -1,0 +1,3 @@
+Sitemap: https://chongzhenxiang.cn/czxBlog/sitemap.xml
+User-agent:*
+Disallow:
