@@ -84,12 +84,12 @@ export default defineNavbarConfig([
         icon: "eos-icons:ai",
         activeMatch: "^/ai/",
       },
-      {
-        text: "Command-Line Interface",
-        link: "/cli/",
-        icon: "grommet-icons:cli",
-        activeMatch: "^/cli",
-      },
+      // {
+      //   text: "Command-Line Interface",
+      //   link: "/cli/",
+      //   icon: "grommet-icons:cli",
+      //   activeMatch: "^/cli",
+      // },
       // {
       //   text: "程序员容易发音错误的单词",
       //   link: "/cpwp/",

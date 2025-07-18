@@ -1,23 +1,23 @@
 <script setup lang="ts">
-import VPSocialLinks from '@theme/VPSocialLinks.vue'
-import { computed } from 'vue'
-import { useData } from 'vuepress-theme-plume/client'
+import VPSocialLinks from "@theme/VPSocialLinks.vue";
+import { computed } from "vue";
+import { useData } from "vuepress-theme-plume/client";
 
-defineProps<{
-  name?: string
-  avatar?: string
-}>()
+const props = defineProps<{
+  name?: string;
+  avatar?: string;
+}>();
 
-const { theme } = useData()
+const { theme } = useData();
 
-const profile = computed(() => theme.value.profile)
-const social = computed(() => theme.value.social)
+const profile = computed(() => theme.value.profile);
+const social = computed(() => theme.value.social);
 </script>
 
 <template>
   <div v-if="profile || (name && avatar)" class="landing-profile">
     <div class="landing-card profile-avatar">
-      <img :src="avatar || profile?.avatar" alt="Avatar">
+      <img :src="`/czxBlog${avatar}` || profile?.avatar" alt="Avatar" />
     </div>
     <div>
       <h2 class="profile-name">
@@ -54,7 +54,7 @@ const social = computed(() => theme.value.social)
 }
 
 .landing-card.profile-avatar::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -97,7 +97,7 @@ const social = computed(() => theme.value.social)
   flex: 1 2;
   color: var(--landing-c-text);
   font-size: 48px;
-  font-family: 'Ma Shan Zheng', sans-serif;
+  font-family: "Ma Shan Zheng", sans-serif;
   font-weight: 400;
   text-shadow: 1px 1px 2px var(--landing-card-bg);
   line-height: 1;
@@ -128,7 +128,8 @@ const social = computed(() => theme.value.social)
   height: 36px;
 }
 
-.landing-profile :deep(.vp-social-links .vp-social-link [class^="vpi-social-"]) {
+.landing-profile
+  :deep(.vp-social-links .vp-social-link [class^="vpi-social-"]) {
   width: 24px;
   height: 24px;
 }
