@@ -1,5 +1,5 @@
 ---
-title: 文章推荐
+title: 个人知识库
 createTime: 2025/07/09 10:29:09
 permalink: /recommend/
 article: false

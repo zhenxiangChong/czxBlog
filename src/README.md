@@ -22,8 +22,8 @@ config:
         link: /sites-collect/
         icon: mdi:roadmap
 
-      - text: 文章推荐
-        link: /recommend/
+      - text: 个人知识库
+        link: https://www.yuque.com/chunshu-mkzy7/damec0
         icon: material-symbols:text-snippet-outline
 
       - text: AI
