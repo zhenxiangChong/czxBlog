@@ -30,7 +30,7 @@ tags:
 - `visual viewport`： 虚拟viewport
 - `layout viewport`： 布局viewport
 
-![viewport](/images/viewport.jpg)
+![viewport](/czxBlog/images/viewport.jpg)
 
 两者的概念， 可以想象 `layout viewport` 为一张不可改变大小和角度的图片，但它被一层蒙板挡住了， `visual viewport` 是一个蒙板上我们可以观察到 这张图片的窗口。我们可以通过这个窗口观察到 图片的部分内容。并且可以对这个窗口进行拖动或缩放，进而观察到图片的完整内容。
 
@@ -144,7 +144,7 @@ div {
 
 该方案的方法，比如处理 x轴方向的线时， 需要准备 一张2px高的图片，根据显示是上边框，还是下边框，如上边框，则该图片的 上一半1px为对应的颜色的先，下一半为透明。
 
-_line.png_ ![1px-lines.png](/images/1px-lines.png)
+_line.png_ ![1px-lines.png](/czxBlog/images/1px-lines.png)
 
 ```css
 div {

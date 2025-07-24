@@ -90,14 +90,14 @@ export default App
 此时，`App` 会重新渲染，`Child` 也会重新渲染。
 
 ::: center
-![render-1](/images/react/optimize/rendered-1.png){style="max-width:640px"}
+![render-1](/czxBlog/images/react/optimize/rendered-1.png){style="max-width:640px"}
 :::
 
 当我们点击 `Change Other Value` 按钮时，`otherValue` 发生了改变，`App` 会重新渲染。
 虽然 `Child` 组件没有用到 `otherValue`, 但 `Child` 依然重新渲染了。
 
 ::: center
-![render-2](/images/react/optimize/rendered-2.png){style="max-width:640px"}
+![render-2](/czxBlog/images/react/optimize/rendered-2.png){style="max-width:640px"}
 :::
 
 这是因为当 Parent 组件的 `state` 或 `props` 发生变化时，React 会默认重新渲染该组件及其所有 Child 组件。
@@ -130,7 +130,7 @@ class Child extends React.Component {
 我们重新分别点击 `Increment Count` 和 `Change Other Value` 按钮，可以看到:
 
 ::: center
-![render](/images/react/optimize/rendered-3.png){style="max-width:640px"}
+![render](/czxBlog/images/react/optimize/rendered-3.png){style="max-width:640px"}
 :::
 
 ### PureComponent
@@ -236,14 +236,14 @@ export default App
 此时，`App` 会重新渲染，`Child` 也会重新渲染。
 
 ::: center
-![render-1](/images/react/optimize/rendered-1.png){style="max-width:640px"}
+![render-1](/czxBlog/images/react/optimize/rendered-1.png){style="max-width:640px"}
 :::
 
 当我们点击 `Change Other Value` 按钮时，`otherValue` 发生了改变，`App` 会重新渲染。
 虽然 `Child` 组件没有用到 `otherValue`, 但 `Child` 依然重新渲染了。
 
 ::: center
-![render-2](/images/react/optimize/rendered-2.png){style="max-width:640px"}
+![render-2](/czxBlog/images/react/optimize/rendered-2.png){style="max-width:640px"}
 :::
 
 ### React.memo
@@ -272,7 +272,7 @@ const Child = React.memo(({ count }) => { // [!code ++]
 我们重新分别点击 `Increment Count` 和 `Change Other Value` 按钮，可以看到:
 
 ::: center
-![render](/images/react/optimize/rendered-3.png){style="max-width:640px"}
+![render](/czxBlog/images/react/optimize/rendered-3.png){style="max-width:640px"}
 :::
 
 ::: tip 可以把 `React.memo` 看做是 `PureComponent` 的等价实现
@@ -351,7 +351,7 @@ export default App
 分别点击 `Increment Count` 和 `Change Other Value` 按钮，可以看到:
 
 ::: center
-![useCallback-1](/images/react/optimize/use-callback-1.png){style="max-width:640px"}
+![useCallback-1](/czxBlog/images/react/optimize/use-callback-1.png){style="max-width:640px"}
 :::
 
 当 `otherValue` 变化时，`App` 和 `Child` 都重新渲染了， `Child` 组件并没有使用 `otherValue` 。
@@ -378,7 +378,7 @@ function App() {
 分别点击 `Increment Count` 和 `Change Other Value` 按钮，可以看到:
 
 ::: center
-![useCallback-2](/images/react/optimize/use-callback-2.png){style="max-width:640px"}
+![useCallback-2](/czxBlog/images/react/optimize/use-callback-2.png){style="max-width:640px"}
 :::
 
 可以看到，当 `otherValue` 变化时，`Child` 没有重新渲染了，这符合我们的预期。
@@ -456,7 +456,7 @@ function App() {
 ```
 
 ::: center
-![useMemo-1](/images/react/optimize/use-memo-1.png){style="max-width:640px"}
+![useMemo-1](/czxBlog/images/react/optimize/use-memo-1.png){style="max-width:640px"}
 :::
 
 可以看到，不管是更新 `count` 还是更新 `otherValue` ， `doubleCount` 都会重新计算。
@@ -486,7 +486,7 @@ function App() {
 ```
 
 ::: center
-![useMemo-2](/images/react/optimize/use-memo-2.png){style="max-width:640px"}
+![useMemo-2](/czxBlog/images/react/optimize/use-memo-2.png){style="max-width:640px"}
 :::
 
 可以看到， 当 `count` 变化时，`doubleCount` 重新计算，但 `otherValue` 变化时，`doubleCount` 没有重新计算，这符合我们的预期。
@@ -520,6 +520,7 @@ React 渲染优化核心在于 **精确控制组件更新时机** 。
 - 所有优化都基于浅比较原理
 - 函数组件优化需要 hooks 的配合使用
 - 复杂数据结构需保证引用更新可预测性
+- 将变化与不变的组件分离
 
 ::: important 性能优化第一原则
 只有在性能监测工具（如 React DevTools Profiler）确认存在性能问题后才进行优化，避免过早优化带来的代码复杂度。

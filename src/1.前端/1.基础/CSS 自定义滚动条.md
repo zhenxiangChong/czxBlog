@@ -12,7 +12,7 @@ permalink: /article/4ef5e74b/
 <!-- more -->
 
 :::demo-wrapper img
-![scrollbar intro](/images/scrollbar/scrollbar-intro.jpg)
+![scrollbar intro](/czxBlog/images/scrollbar/scrollbar-intro.jpg)
 :::
 
 ## 滚动条的组成
@@ -22,7 +22,7 @@ permalink: /article/4ef5e74b/
 滚动条主要包含两个部分： **滚动轨道 Track** 和 **滑块 Thumb**。
 
 :::demo-wrapper img
-![scrollbar parts](/images/scrollbar/scrollbar-parts.jpg)
+![scrollbar parts](/czxBlog/images/scrollbar/scrollbar-parts.jpg)
 :::
 
 **Track** 是滚动条的底部， **Thumb** 是提供用户交互的， 当用户拖动它控制页面或容器的滚动内容。
@@ -112,7 +112,7 @@ Track 表示滚动条的底部，我们可以通过添加 `background-color`、`
 你有没有想过，当内容在滚动容器中增加时，我们如何避免布局变化？让我们以以下案例为例。
 
 :::demo-wrapper img
-![scrollbar gutter](/images/scrollbar/scrollbar-gutter-1.jpg)
+![scrollbar gutter](/czxBlog/images/scrollbar/scrollbar-gutter-1.jpg)
 :::
 
 ```css
@@ -131,7 +131,7 @@ Track 表示滚动条的底部，我们可以通过添加 `background-color`、`
 当内容增长时，将显示滚动条，从而减少内容的可用空间。
 
 :::demo-wrapper img
-![scrollbar gutter](/images/scrollbar/scrollbar-gutter-2.jpg)
+![scrollbar gutter](/czxBlog/images/scrollbar/scrollbar-gutter-2.jpg)
 :::
 
 可以看到，当内容过长出现滚动条时，内容会发生偏移。
@@ -150,13 +150,13 @@ Track 表示滚动条的底部，我们可以通过添加 `background-color`、`
 ```
 
 :::demo-wrapper img
-![scrollbar gutter](/images/scrollbar/scrollbar-gutter-3.jpg)
+![scrollbar gutter](/czxBlog/images/scrollbar/scrollbar-gutter-3.jpg)
 :::
 
 当内容增加时，就不会影响布局的空间变化，因为浏览器已经为 滚动条预留了空间。
 
 :::demo-wrapper
-![scrollbar gutter](/images/scrollbar/scrollbar-gutter-4.jpg)
+![scrollbar gutter](/czxBlog/images/scrollbar/scrollbar-gutter-4.jpg)
 :::
 
 好消息是，`scrollbar-gutter` 的兼容性，从 `Chrome@94` 就开始得到了支持。
@@ -232,13 +232,13 @@ html {
 
 在 MacOS Safari 中， Track 两侧都有边框， 背景色为纯色，Thumb 是圆形的，左右两侧都有空间。
 :::demo-wrapper img
-![scrollbar use case](/images/scrollbar/use-case-1.jpg)
+![scrollbar use case](/czxBlog/images/scrollbar/use-case-1.jpg)
 :::
 而在 MacOS Chrome 中，Track 是透明的，`Thumb` 是原型的，而且整个滚动条只在滚动时才显示，且不占据空间。
 
 在 Windows 中，Track 是 灰色背景，Thumb 是 矩形的。
 ::: demo-wrapper img
-![scrollbar use case](/images/scrollbar/use-case-1-2.jpg)
+![scrollbar use case](/czxBlog/images/scrollbar/use-case-1-2.jpg)
 :::
 
 ### 示例1
