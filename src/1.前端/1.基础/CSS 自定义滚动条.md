@@ -31,7 +31,7 @@ permalink: /article/4ef5e74b/
 而变化。
 
 :::demo-wrapper img
-![scrollbar places dir](/images/scrollbar/scrollbar-places-dir.jpg)
+![scrollbar places dir](/czxBlog/images/scrollbar/scrollbar-places-dir.jpg)
 :::
 
 ## 自定义滚动条
